@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url('./HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font: 100 900;
+}
+
+body{
+    margin: 0px;
+    font-size: 1.1rem;
+    font-family: "HankenGrotesk";
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 1fr;
+    height: 100vh;
+}
+
+.result{
+background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+border-bottom-left-radius: 10%;
+border-bottom-right-radius: 10%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding-bottom: 20px;
+
+}
+
+.score{
+    height: 176px;
+    width: 176px;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    color: white;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.original{
+    font-size: 3rem;
+}
+
+p{
+    margin: -12px;
+    font-weight: 400;
+    color: hsl(241, 100%, 89%); 
+}
+
+h4{
+    color:hsl(221, 100%, 96%);
+}
+
+.result h2{
+    color: white;
+}
+
+.content{
+    display: flex;
+    height: 3.5rem;
+    width: 90vw;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 15px;
+}
+
+
+.content span{
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+
+#text{
+    display: block;
+    margin-left: 10px;
+}
+.summary{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.sum{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+}
+.one{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.two{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.three{
+    background-color:  hsla(166, 100%, 37%, 0.1);
+}
+
+.four{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+button{
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 50px;
+    width: 90%;
+    padding: 1.2rem 0px;
+    border: none;
+    margin: 0px;
+    color: white;
+    font-weight: 500px;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+
+.content, button{
+    max-width: 500px;
+}
+
+.summary h2{
+    width: 90vw;
+    color: hsl(224, 30%, 27%);
+}
+
+@media (min-width:700px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns:350px 350px;
+        grid-template-rows: 500px;
+        height: 500px;
+      border-radius: 10%;
+      box-shadow: 1px 1px 20px  hsl(224, 30%, 27%);
+    }
+
+    .sum{
+        width: 90%;
+    }
+
+    .content{
+        width: 100%;
+        max-width: unset;
+    }
+
+    .summary h2{
+        width: unset;
+       align-self: flex-start;
+        margin-left: 18px;
+    }
+
+    .result{
+       border-radius: 10%;
+    }        
+
+}
