@@ -21,6 +21,9 @@ body{
     height: 100vh;
 }
 
+button:hover{
+    background:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
 .result{
 background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
 border-bottom-left-radius: 10%;
